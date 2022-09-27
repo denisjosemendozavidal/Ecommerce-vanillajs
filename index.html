@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock up Ecommerce</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container-everything">
+        <section class="header">
+            <div class="nav-menu" id="nav-menu">
+                <a href="#lumus" class="nav-menu-option" id="nav-home">Lumus</a>
+                <a href="#products" class="nav-menu-option" id="nav-products">Products</a>
+                <a href="#contact" class="nav-menu-option" id="nav-contact">Contact us</a>
+            </div>
+        <span class="burger" id="Burger">&#9776</span>
+        <span class="cart-button" id="cart-button"><img src="/images/cart.svg" alt="Cart"><div class="alertbadge"></div></span>
+        </section>
+
+        <div class="greeting-animation" id="lumus"></div>
+
+        <section class="our-Catalogue">
+            <h2 id="products" class="catalogue-tittle">Our Catalogue</h2>
+            <div class="filters">
+                <h3 class="filters-tittle">Filters: </h3>
+                <h4 class="filters-option" data-filter=".all">All Products</h4>
+                <h4 class="filters-option" data-filter=".newest">Newest</h4>
+                <h4 class="filters-option" data-filter=".couplesDesign">Couples Designs</h4>
+                <h4 class="filters-option" data-filter=".sweaters">Sweaters/Hoodies</h4>
+                <h4 class="filters-option" data-filter=".promotions">Promotions</h4>
+            </div>
+            <div class="product-list-container" id="product-list-container">
+                <div class="articule all sweaters" id="1">
+                    <img class="articule-img" src="/images/P7.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $5</p>
+                    <p class="articule-stock">Stock: 7 units</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <div class="articule all promotions" id="2">
+                    <img class="articule-img" src="/images/P32.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $7</p>
+                    <p class="articule-stock">Stock: 8 units</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <div class="articule all couplesDesign sweaters" id="3">
+                    <img class="articule-img" src="/images/P38.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $38</p>
+                    <p class="articule-stock">Stock: 12 UNITS</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <div class="articule all newest" id="4">
+                    <img class="articule-img" src="/images/P47.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $6</p>
+                    <p class="articule-stock">Stock: 15</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <div class="articule all promotions" id="5">
+                    <img class="articule-img" src="/images/P49.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $10</p>
+                    <p class="articule-stock">Stock: 8 units</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <div class="articule all newest couplesDesign" id="6">
+                    <img class="articule-img" src="/images/P50.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $20</p>
+                    <p class="articule-stock">Stock: 9 units</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <div class="articule all newest" id="7">
+                    <img class="articule-img" src="/images/P30.jpeg" alt="">
+                    <h2 class="articule-body-title"></h2>
+                    <p class="articule-price">Price: $9</p>
+                    <p class="articule-stock">Stock: 15 units</p>
+                    <button class="btn btn-add">Add to cart</button>
+                </div>
+                <!--
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                </div>
+                <div class="articule all">
+                    <div class="articule-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="articule-body" id="">
+                        <h2 class="articule-body-title"></h2>
+                        <p class="price">Price:$ ${price}</p>
+                        <p class="stock">Stock: ${Stock}</p>
+                        <button class="btn btn-add">Add to cart</button>
+                    </div>
+                -->
+                </div>
+
+            </div>
+        </section>
+
+<!--Shopping cart-->
+
+        <section class="added-to-cart" id="added-to-cart">
+            <div class="added-to-cart-body"></div>
+            <div class="added-to-cart-total"></div>
+        </section>
+
+        <section class="footer" id="contact">
+            <h2>Contact us</h2>
+            <a class="whatsapp-icon-1" href="https://api.whatsapp.com/send?phone=573126155012" target="_blank" ><img src="/images/whatsapp.jpg" alt="Whatsapp 1"></a>
+            <a class="istagram-icon-1" href="https://www.instagram.com/lumus.op4/?igshid=YmMyMTA2M2Y%3D" target="_blank" ><img src="/images/Insta.jpg" alt="Instagram-Icon"></a>
+            <a class="tiktok-icon-1" href="https://www.tiktok.com/@lumus.op4?_t=8Vd21ONfMLm&_r=1" target="_blank" ><img src="/images/tiktok.jpg" alt="TikTok-Icon"></a>
+        </section>
+    
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            mixitup(".product-list-container", {
+                selectors: {
+                    target: ".articule"
+                },
+                animation: {
+                    duration: 100
+                }
+            });
+        </script>
+    <script src="/main.js" type="module"></script>
+</body>
+</html>
