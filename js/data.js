@@ -18,7 +18,7 @@ export const dataDB = [
     },
     {
         id: 3,
-        name: "P10",
+        name: "P38",
         urlImage:"/images/P38.jpeg",
         Stock: 12,
         price: 8,
@@ -26,7 +26,7 @@ export const dataDB = [
     },
     {
         id: 4,
-        name: "P15",
+        name: "P47",
         urlImage: "/images/P47.jpeg",
         Stock:15,
         price: 6,
@@ -35,7 +35,7 @@ export const dataDB = [
 
     {
         id: 5,
-        name: "P2",
+        name: "P47",
         urlImage: "/images/P49.jpeg",
         Stock: 8,
         price: 10,
@@ -44,7 +44,7 @@ export const dataDB = [
 
     {
         id: 6,
-        name: "P3",
+        name: "P50",
         urlImage:"/images/P50.jpeg",
         Stock: 9,
         price: 20,
@@ -53,7 +53,7 @@ export const dataDB = [
 
     {
         id: 7,
-        name: "P3",
+        name: "P30",
         urlImage:"/images/P30.jpeg",
         Stock: 15,
         price: 9,
