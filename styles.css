@@ -161,6 +161,7 @@ a {
     height: fit-content;
     padding-right: 5%;
     font-family: verdana;
+    background: linear-gradient(90deg,#048ef0,#9046bf,#fa87b5,#f15481)
 }
 
     .catalogue-tittle {
@@ -706,20 +707,22 @@ a {
 
         .nav-menu-show {
             display: flex;
-            width: 80%;
-            justify-content: flex-end;
-            gap: 5%;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            gap: 10%;
             align-items: center;
             opacity: 100%;
             transition: 1s ease-in-out;
-            transform: translateX(0);
+            transform: translateY(0);
+            height: 150px;
         }
 
             .nav-menu-option {
                 font-family: verdana;
                 font-size: medium;
                 padding: 1%;
-                background-color: rgba(0,0,0,0.2);
+                background: linear-gradient(90deg,#048ef0,#9046bf,#fa87b5,#f15481);
                 color: var(--darwhite);
                 border-radius: 50px;
                 transition: 1s ease-in-out;
@@ -853,6 +856,16 @@ a {
                 height: 100%;
                 width: 100%;
             }
+
+    .greeting-animation {
+        width: 100vw;
+        height: 50vh;
+        background-image: url("/images/greeting2.gif");
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        border-radius: 50px;
+    }
 }
 
 /*Styles for regular cells*/
@@ -864,7 +877,6 @@ a {
         justify-content: flex-end;
         gap: 2%;
         margin-top: 1%;
-        position: fixed;
         background: transparent;
         width: 90%;
         z-index: 100;
@@ -968,4 +980,14 @@ a {
                 color: var(--darwhite);
                 
               }
+
+    .greeting-animation {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("/images/greeting2.gif");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    border-radius: 50px;
+}
 }
